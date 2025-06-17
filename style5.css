@@ -1,0 +1,346 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+  
+
+
+body{
+    background-image: url(SHIVASHAKTI.png) ;
+    background-size: cover;
+    background-color: #000;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+    backdrop-filter: blur(3px);
+    margin: 0;
+    overflow-x: hidden;
+
+}
+
+@media screen and (max-width:770px) { 
+  body{
+    background-attachment: scroll;
+  }
+  
+}
+    
+
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);  /* Black overlay with 60% opacity */
+  z-index: -1;
+}
+
+section {
+  padding: 100px 20px;
+  background-color: transparent; /* Let background show through */
+  color: white; /* Ensure contrast */
+}
+
+.logo {
+  flex: 1;
+  display: flex;
+  position: relative;
+  padding: 20px;
+  color: #000;
+}
+
+h1{
+    color: rgb(255, 255, 255);
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 700;
+    font-size: xx-large;
+    padding-left: 10px;
+    opacity: 0.8;
+    
+}
+nav{
+    
+    padding: 20px;
+    display: flex;
+  overflow: hidden;
+  height: fit-content;
+  
+}
+
+nav{
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    position: -webkit-sticky;
+    position: sticky;
+    color: white;
+}
+ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+}
+li {
+  float:left;
+}
+
+li a {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  cursor:pointer ;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 2rem;
+  gap: 20px;
+  
+}
+
+.left-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* spacing between headings and logo */
+  padding-left: 50px;
+  flex: 1 1 50%;
+  min-width: 0;
+}
+
+.right-logo{
+   display: flex;
+   flex-direction:column;
+   align-items: center;
+   padding-right: auto;
+   flex: 1 1 50%;
+   min-width: 0;
+}
+
+.hero-logo{
+    height: auto;
+    width :100%;
+    object-fit:contain;
+}
+
+.yugavaha{
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(3rem, 14vw, 10rem);
+    font-weight: 700;
+    font-style: normal;
+    color: #fff;
+}
+
+.yugavaha5{
+    font-family: "Maharlika", sans-serif;
+    font-size: clamp(3rem, 14vw, 10rem);
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+
+}
+/** about us**/
+
+.about-section {
+  padding: 80px 20px;
+  max-width: 800px;
+  margin: auto;
+  color: #eaeaea;
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  border-bottom: 1px solid #444;
+  display: inline-block;
+}
+
+.about-section p {
+  font-size: 1rem;
+  line-height: 1.7;
+  opacity: 0.8;
+}
+
+/** vision**/
+.vision-section {
+  padding: 80px 20px;
+  max-width: 800px;
+  margin: auto;
+  color: #eaeaea;
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+}
+
+.vision-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  border-bottom: 1px solid #444;
+  display: inline-block;
+}
+
+.vision-section p {
+  font-size: 1rem;
+  line-height: 1.7;
+  opacity: 0.8;
+}
+
+
+
+
+h2{
+    color: aliceblue;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    padding: 20px;
+    text-shadow: #000;
+}
+.port-icon {
+    width: 30px;
+    height: 30px;
+    padding-left: 6px;
+    margin-right: 8px; 
+    vertical-align: middle;
+    
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+     
+}
+
+.box{
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+  height: 400px;
+  max-width: 500px;
+  flex: 1 1 300px;
+  flex-wrap: wrap;
+ transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #fff;
+  overflow: hidden;
+  margin: 20px;
+}
+
+.box:hover {
+  transform: scale(1.05); /* 🔍 makes it slightly bigger */
+  box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.3); /* 💡 optional glow */
+  z-index: 1;
+}
+
+
+@media screen and (max-width: 770px){
+  .box{
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+
+.box-image{
+  display: block;
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+  body {
+    background-attachment: scroll;
+  }
+
+  .box {
+    flex: 1 1 100%;
+    max-width: 95%;
+  }
+
+  .hero{
+    flex-wrap: nowrap; /* ✅ still side-by-side */
+    flex-direction: row;
+    padding: 1rem;
+    padding: 10px;
+  }
+
+  .yugavaha,
+  .yugavaha5 {
+    font-size: clamp(3.5rem, 6vw, 5rem);
+    
+  }
+
+  .left-text{
+    padding-left: 10%;
+    
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right-logo {
+    padding: 0;
+    align-items: center;
+    flex: 1 1 50%;
+  }
+
+  .hero-logo {
+    height: auto;
+    max-height: 200px;
+  }
+}
+
+
+.site-footer {
+  background-color: #0f0f0f;
+  padding: 40px 20px;
+  color: #aaa;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  border-top: 1px solid #222;
+}
+
+.footer-content {
+  max-width: 900px;
+  margin: auto;
+}
+
+.footer-links {
+  margin-top: 15px;
+}
+
+.footer-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #888;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #00ffff;
+}
+
